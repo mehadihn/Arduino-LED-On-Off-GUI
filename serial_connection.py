@@ -14,7 +14,7 @@ class SerialConn():
     def get_port_list(self):
         self.ports = serial.tools.list_ports.comports(include_links=True)
         #print(f'found {len(self.ports)} devices')
-        #self.port_info()
+        self.port_info()
         #self.match_device_manufacturer("FTDI")
         port_links = []
         for each in self.ports:
