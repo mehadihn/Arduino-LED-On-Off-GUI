@@ -11,12 +11,17 @@ void loop() {
     inBytes = Serial.readStringUntil('\n');
     if(inBytes == "on"){
       digitalWrite(LED_BUILTIN, HIGH);
+      int a = 1+1;
       Serial.write("LED On\n");
+      // Serial.write(a);
     }
 
     else if(inBytes == "off"){
       digitalWrite(LED_BUILTIN, LOW);
-      Serial.write("LED Off\n");
+      Serial.println("LED Off12112");
+      int a = 2 + 2;
+      // String b = String(a);
+      Serial.println(a);
     }
 
     else{

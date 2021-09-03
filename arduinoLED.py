@@ -18,6 +18,7 @@ class arduino_LED:
             arduino.write(data.encode())
             time.sleep(2)
             print(arduino.readline().decode('ascii'))
+            print(arduino.readline().decode('utf-8').rstrip('\r\n'))
             print("Close")
             arduino.close()
         except Exception as e:
