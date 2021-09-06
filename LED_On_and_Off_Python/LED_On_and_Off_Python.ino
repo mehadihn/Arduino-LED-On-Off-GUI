@@ -12,8 +12,8 @@ void loop() {
     if(inBytes == "on"){
       digitalWrite(LED_BUILTIN, HIGH);
       int a = 1+1;
-      Serial.write("LED On\n");
-      // Serial.write(a);
+      Serial.print("LED On\n");
+      Serial.println(a);
     }
 
     else if(inBytes == "off"){
